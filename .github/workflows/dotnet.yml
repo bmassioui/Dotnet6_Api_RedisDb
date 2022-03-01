@@ -33,7 +33,7 @@ jobs:
     - name: Docker-Compose Publish
       run: |
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-          docker-compose push ${{ secrets.DOCKER_HUB_USERNAME }}/Dotnet6_Api_RedisDb:latest
+          docker-compose push bmassioui/Dotnet6_Api_RedisDb:latest
           docker logout
         
     
