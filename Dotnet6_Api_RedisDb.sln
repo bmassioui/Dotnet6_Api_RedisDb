@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{197F91CA-546
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet_Redis.API", "src\Dotnet_Redis.API\Dotnet_Redis.API.csproj", "{B3013F24-E91B-47BC-86C5-E266EE00EC6E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EBD7CCA9-8940-4E04-BADD-526302C10230}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{60946156-84D8-42C1-A953-29AC967BB522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet_Redis.API.Tests", "tests\UnitTests\Dotnet_Redis.API.Tests\Dotnet_Redis.API.Tests.csproj", "{DE868AD4-DB44-41C1-9F4D-23BBFB57DDD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +26,14 @@ Global
 		{B3013F24-E91B-47BC-86C5-E266EE00EC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3013F24-E91B-47BC-86C5-E266EE00EC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3013F24-E91B-47BC-86C5-E266EE00EC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE868AD4-DB44-41C1-9F4D-23BBFB57DDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE868AD4-DB44-41C1-9F4D-23BBFB57DDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE868AD4-DB44-41C1-9F4D-23BBFB57DDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE868AD4-DB44-41C1-9F4D-23BBFB57DDD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B3013F24-E91B-47BC-86C5-E266EE00EC6E} = {197F91CA-5465-4F09-9CB9-052346F31002}
+		{60946156-84D8-42C1-A953-29AC967BB522} = {EBD7CCA9-8940-4E04-BADD-526302C10230}
+		{DE868AD4-DB44-41C1-9F4D-23BBFB57DDD2} = {60946156-84D8-42C1-A953-29AC967BB522}
 	EndGlobalSection
 EndGlobal
