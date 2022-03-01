@@ -19,7 +19,7 @@ public class PlatformsController : ControllerBase
     /// </summary>
     /// <returns></returns>
     [HttpGet]
-    public ActionResult<IEnumerable<Platform>> GetPlatforms()
+    public ActionResult<IEnumerable<Platform>> Get()
     {
         return Ok(_repository.Get());
     }
