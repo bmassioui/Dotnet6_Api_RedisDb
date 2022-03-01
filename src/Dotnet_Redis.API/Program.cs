@@ -18,8 +18,8 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "TodoItem WebAPI",
-        Description = "An ASP.NET Core Web API",
+        Title = "Redis as Primary DB with Dotnet 6 WebAPI",
+        Description = "An ASP.NET Core Web API using Redis as Primary Database",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
