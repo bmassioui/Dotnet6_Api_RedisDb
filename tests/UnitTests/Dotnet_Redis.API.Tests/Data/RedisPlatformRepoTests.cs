@@ -14,10 +14,12 @@ public class RedisPlatformRepoTests
     public RedisPlatformRepoTests()
     {
         _connectionMultiplexer = new Mock<IConnectionMultiplexer>();
+        var mockDatabase = new Mock<IDatabase>();
         _redisPlatformRepo = new RedisPlatformRepo(_connectionMultiplexer.Object);
 
         // Setup 
         _connectionMultiplexer.Setup(_ => _.IsConnected).Returns(false);
+        _connectionMultiplexer.Setup(_ => _.GetDatabase(It.IsAny<int>(), It.IsAny<object>())).Returns(mockDatabase.Object);
     }
 
     /// <summary>
@@ -35,5 +37,4 @@ public class RedisPlatformRepoTests
         // Assert
         Assert.Throws<ArgumentOutOfRangeException>(action);
     }
-
 }
